@@ -1,5 +1,6 @@
 
-[![Travis](https://travis-ci.org/corybrunson/tdaunif.svg?branch=main)](https://travis-ci.org/corybrunson/tdaunif)
+[![CRAN](http://www.r-pkg.org/badges/version/tdaunif)](https://cran.r-project.org/package=tdaunif)
+[![downloads](https://cranlogs.r-pkg.org/badges/tdaunif)](https://cran.r-project.org/package=tdaunif)
 
 # **tdaunif**: Uniform manifold samplers for topological data analysis
 
@@ -38,18 +39,26 @@ regions of greater compression being oversampled relative to regions of
 greater expansion. One especially important motivation for this package
 is therefore to include uniform samplers for popular embeddings of
 topological manifolds, including functions that allow users to build
-their own with minimal effort (see `help(manifold, package =
-"tdaunif")`).
+their own with minimal effort (see
+`help(manifold, package = "tdaunif")`).
 
 ## usage
 
 ### installation
 
-**tdaunif** is not yet on CRAN, but you can install it from GitHub using
-[the **remotes** package](https://github.com/r-lib/remotes):
+The latest release of **tdaunif** can be installed from
+[CRAN](https://cran.r-project.org/):
 
 ``` r
-remotes::install_github("corybrunson/tdaunif", build_vignettes = TRUE)
+install.packages("tdaunif")
+```
+
+You can install the current development version of **tdaunif** from
+GitHub using [the **remotes**
+package](https://github.com/r-lib/remotes):
+
+``` r
+remotes::install_github("tdaverse/tdaunif", build_vignettes = TRUE)
 ```
 
 To stabilize this document, this chunk saves the default graphics
@@ -63,8 +72,8 @@ set.seed(0)
 
 ### illustration
 
-[An intuitive embedding of the Klein bottle
-into 4-space](https://en.wikipedia.org/wiki/Klein_bottle#3D_pinched_torus_/_4D_M%C3%B6bius_tube)
+[An intuitive embedding of the Klein bottle into
+4-space](https://en.wikipedia.org/wiki/Klein_bottle#3D_pinched_torus_/_4D_M%C3%B6bius_tube)
 is adapted from the popular “donut” embedding of the torus in 3-space.
 In **tdaunif** this is called the “tube” parameterization. We can sample
 uniformly from this embedding (without noise) and examine the coordinate
@@ -112,9 +121,9 @@ plot(y, asp = 1, pch = 19, cex = .5)
 ![](man/figures/README-planar%20triangle,%20uniformly%20and%20with%20stratification-1.png)<!-- -->
 
 See [Arvo (1995)](https://dl.acm.org/doi/10.1145/218380.218500) and
-Arvo’s notes from
-[Siggraph 2001](https://www.cs.princeton.edu/courses/archive/fall04/cos526/papers/course29sig01.pdf)
-for a detailed treatment of this techniquue.
+Arvo’s notes from [Siggraph
+2001](https://www.cs.princeton.edu/courses/archive/fall04/cos526/papers/course29sig01.pdf)
+for a detailed treatment of this technique.
 
 ``` r
 par(oldpar)
