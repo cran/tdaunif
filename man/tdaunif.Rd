@@ -49,6 +49,14 @@ P Diaconis, S Holmes, and M Shahshahani (2013) Sampling from a Manifold.
 \emph{Advances in Modern Statistical Theory and Applications: A Festschrift in
 honor of Morris L. Eaton}, 102--125. \doi{10.1214/12-IMSCOLL1006}
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://tdaverse.github.io/tdaunif/}
+  \item Report bugs at \url{https://github.com/tdaverse/tdaunif/issues}
+}
+
+}
 \author{
 Jason Cory Brunson
 

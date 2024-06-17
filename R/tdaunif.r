@@ -42,11 +42,10 @@
 #' @template ref-diaconis2013
 #' 
 
-#' @docType package
 #' @author Jason Cory Brunson
 #' @author Brandon Demkowicz
 #' @author Sanmati Choudhary
 #' @importFrom stats runif
 #' @name tdaunif
 #' @aliases tdaunif-package
-NULL
+"_PACKAGE"
